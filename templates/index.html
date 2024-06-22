@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Topics Scraper</title>
+    <script>
+        function runScript() {
+            fetch('/run_script', {method: 'POST'})
+                .then(response => response.json())
+                .then(data => {
+                    let trends = data.trends.map((trend, index) => trend ? `<li>${trend}</li>` : `<li>Trend ${index + 1} not available</li>`).join('');
+                    document.getElementById('result').innerHTML = `
+                        <p>These are the most happening topics as on ${data.timestamp}:</p>
+                        <ul>${trends}</ul>
+                        <p>The IP address used for this query was ${data.ip_address}.</p>
+                        <p>Here’s a JSON extract of this record from the MongoDB:</p>
+                        <pre>${JSON.stringify(data.db_data, null, 2)}</pre>
+                        <button onclick="runScript()">Click here to run the query again.</button>
+                    `;
+                });
+        }
+    </script>
+</head>
+<body>
+    <h1>Trending Topics Scraper</h1>
+    <button onclick="runScript()">Click here to run the script</button>
+    <div id="result"></div>
+</body>
+</html>
