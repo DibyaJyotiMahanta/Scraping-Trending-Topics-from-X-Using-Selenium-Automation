@@ -1,6 +1,5 @@
 # Scraping Trending Topics from X Using Selenium Automation
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![Selenium](https://img.shields.io/badge/selenium-4.x-brightgreen.svg)
 ![Flask](https://img.shields.io/badge/flask-2.3.2-green.svg)
