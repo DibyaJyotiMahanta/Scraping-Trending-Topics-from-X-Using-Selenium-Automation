@@ -107,4 +107,4 @@ Contributions are welcome! Please create a new issue to discuss your ideas or su
 
 ## Contact
 
-For any inquiries or feedback, please contact [Dibya Jyoti Mahanta](mailto:your-email@example.com).
+For any inquiries or feedback, please contact [Dibya Jyoti Mahanta](mailto:mahantasoham@gmail.com), [Anish Kumar](mailto:anishkumr.dev@gmail.com).
