@@ -24,9 +24,10 @@ This project uses Flask for the backend and Selenium to automate the scraping of
 - Data storage in MongoDB.
 - Flask backend to handle requests and manage scraping.
 - Configurable scraping intervals.
-- Error handling and logging.
 
 ## Installation
+
+NOTE: you can connect with us for the proper installation of the project if somethign goes wrong.
 
 1. Clone the repository:
     ```bash
